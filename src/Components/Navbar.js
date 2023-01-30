@@ -1,32 +1,42 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import icon from '../img/icon.png';
+import '../css/Navbar.css'
 
 export default function Navbar() {
   return (
-    <nav>
-      <img src={icon} />
-      <h1>Space Travelers' Hub</h1>
-      <ul>
+    <nav className="flex">
+      <div className="logo flex">
+        <img src={icon} alt="Logo" />
+        <h1>Space Travelers' Hub</h1>
+      </div>
+      <ul className="flex">
         <li>
-        <NavLink
-          to="/"
-          style={({ isActive }) => (isActive ? { color: 'blue' } : { color: 'black' })}
-        >
-          Rockets
+          <NavLink
+            className="link"
+            to="/"
+            style={({ isActive }) => (isActive ? { textDecoration: 'underline' } : {})}
+          >
+            Rockets
         </NavLink>
-        <NavLink
-          to="/missions"
-          style={({ isActive }) => (isActive ? { color: 'blue' } : { color: 'black' })}
-        >
-          Missions
-        </NavLink>
-        <NavLink
-          to="/myprofile"
-          style={({ isActive }) => (isActive ? { color: 'blue' } : { color: 'black' })}
-        >
-          My Profile
-        </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="link"
+            to="/missions"
+            style={({ isActive }) => (isActive ? { textDecoration: 'underline' } : {})}
+          >
+            Missions
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="link"
+            to="/myprofile"
+            style={({ isActive }) => (isActive ? { textDecoration: 'underline' } : {})}
+          >
+            My Profile
+          </NavLink>
         </li>
       </ul>
     </nav>
