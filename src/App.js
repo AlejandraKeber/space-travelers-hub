@@ -1,8 +1,8 @@
-import Navbar from "./Components/Navbar";
-import { Routes, Route } from "react-router-dom";
-import Rockets from "./pages/Rockets";
-import Missions from "./pages/Missions";
-import Myprofile from "./pages/MyProfile";
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Rockets from './pages/Rockets';
+import Missions from './pages/Missions';
+import Myprofile from './pages/MyProfile';
 import './css/base.css';
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
         <div className="line" />
       </header>
       <Routes>
-          <Route path="/" element={<Rockets />} />
-          <Route path="/missions" element={<Missions />} />
-          <Route path="/myprofile" element={<Myprofile />} />
-        </Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/myprofile" element={<Myprofile />} />
+      </Routes>
     </div>
   );
 }
