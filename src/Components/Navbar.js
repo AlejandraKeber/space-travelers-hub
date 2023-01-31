@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getMissions } from '../redux/missions/missions';
 import icon from '../img/icon.png';
 import '../css/Navbar.css';
 
 export default function Navbar() {
+  const dispatch = useDispatch();
   return (
     <nav className="flex">
       <div className="logo flex">
@@ -22,6 +25,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink
+            onClick={() => { dispatch(getMissions()); }}
             className="link"
             to="/missions"
             style={({ isActive }) => (isActive ? { textDecoration: 'underline' } : {})}
