@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, applyMiddleware } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 axios.defaults.baseURL = 'https://api.spacexdata.com/v3/missions';
