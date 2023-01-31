@@ -9,13 +9,14 @@ table {
   tr:nth-child(odd) {
     background-color: white;
   }
-  
+
   tr:nth-child(even) {
     background-color: #d8fffc;
   }
-  
+
   th {
     text-align: start;
+    padding: 0.3rem;
   }
 
   .name {
@@ -25,6 +26,7 @@ table {
 
   .status {
     padding: 1rem;
+
     button {
       white-space: nowrap;
       padding: 0.4rem;
@@ -38,6 +40,7 @@ table {
 
   .joinBtn {
     padding: 1rem;
+
     button {
       white-space: nowrap;
       padding: 0.4rem;
@@ -46,9 +49,5 @@ table {
       border-radius: 0.2rem;
       font-weight: bold;
     }
-  }
-
-  th {
-    padding: 0.3rem;
   }
 }
