@@ -1,0 +1,46 @@
+table {
+  background-color: #e5e8eb;
+  margin: 3rem;
+}
+table td {
+  padding: 0.3rem;
+}
+table tr:nth-child(odd) {
+  background-color: white;
+}
+table tr:nth-child(even) {
+  background-color: #d8fffc;
+}
+table th {
+  text-align: start;
+}
+table .name {
+  display: flex;
+  font-weight: bold;
+}
+table .status {
+  padding: 1rem;
+}
+table .status button {
+  white-space: nowrap;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(168, 168, 168);
+  color: white;
+  font-weight: bold;
+}
+table .joinBtn {
+  padding: 1rem;
+}
+table .joinBtn button {
+  white-space: nowrap;
+  padding: 0.4rem;
+  background-color: #fad9bf;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+table th {
+  padding: 0.3rem;
+}
