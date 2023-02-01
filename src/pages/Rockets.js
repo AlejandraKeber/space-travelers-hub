@@ -1,7 +1,11 @@
 import React from 'react';
+import RocketsContainer from '../Components/RocketsContainer';
+import '../css/Rockets.css';
 
-export default function rockets() {
-  return (
-    <div>rockets</div>
-  );
-}
+const Rockets = () => (
+  <div className="rockets-container">
+    <RocketsContainer />
+  </div>
+);
+
+export default Rockets;
