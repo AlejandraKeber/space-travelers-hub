@@ -15,9 +15,9 @@ export default function JoinBtn(prop) {
   };
   let button;
   if (reserved) {
-    button = <td className="LeaveBtn"><button type="submit" id={id} onClick={leaveBtn}>Leave Mission</button></td>;
+    button = <td className="leave btn"><button type="submit" id={id} onClick={leaveBtn}>Leave Mission</button></td>;
   } else {
-    button = <td className="joinBtn"><button type="submit" id={id} onClick={joinBtn}>Join Mission</button></td>;
+    button = <td className="join btn"><button type="submit" id={id} onClick={joinBtn}>Join Mission</button></td>;
   }
   return (
     button

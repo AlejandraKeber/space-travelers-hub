@@ -1,0 +1,16 @@
+.status {
+  padding: 1rem;
+}
+.status button {
+  white-space: nowrap;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(168, 168, 168);
+  color: white;
+  font-weight: bold;
+}
+
+.active button {
+  background-color: #18a2b8;
+}
