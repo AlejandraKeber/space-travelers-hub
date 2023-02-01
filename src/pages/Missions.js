@@ -19,9 +19,10 @@ export default function Missions() {
           missions.map((mission) => (
             <Mission
               key={uuidv4()}
-              id={mission.missionId}
-              name={mission.missionName}
+              id={mission.id}
+              name={mission.name}
               description={mission.description}
+              reserved={mission.reserved}
             />
           ))
         }

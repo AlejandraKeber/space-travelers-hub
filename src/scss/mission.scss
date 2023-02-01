@@ -24,30 +24,29 @@ table {
     font-weight: bold;
   }
 
-  .status {
-    padding: 1rem;
-
+  .btn {
     button {
       white-space: nowrap;
       padding: 0.4rem;
       border: none;
       border-radius: 0.2rem;
-      background-color: rgb(168, 168, 168);
-      color: white;
       font-weight: bold;
     }
   }
 
-  .joinBtn {
+  .join {
     padding: 1rem;
 
     button {
-      white-space: nowrap;
-      padding: 0.4rem;
       background-color: #fad9bf;
-      border: none;
-      border-radius: 0.2rem;
-      font-weight: bold;
+    }
+  }
+
+  .leave {
+    padding: 1rem;
+
+    button {
+      background-color: #fd747b;
     }
   }
 }
