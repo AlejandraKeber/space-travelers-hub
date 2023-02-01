@@ -26,7 +26,7 @@ const missionsSlice = createSlice({
           missions.push({
             missionId: mission.mission_id,
             missionName: mission.mission_name,
-            missionDescription: mission.description,
+            description: mission.description,
           });
         });
         return { missions };
