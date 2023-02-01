@@ -1,6 +1,7 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 import JoinBtn from './JoinBtn';
+import Membership from './Membership';
 import '../css/mission.css';
 
 export default function Mission(props) {
@@ -11,7 +12,9 @@ export default function Mission(props) {
     <tr>
       <td className="name">{name}</td>
       <td>{description}</td>
-      <td className="status"><button type="submit" id={`${id}status`}>Not a member</button></td>
+      <Membership
+        reserved={reserved}
+      />
       <JoinBtn
         id={id}
         reserved={reserved}
