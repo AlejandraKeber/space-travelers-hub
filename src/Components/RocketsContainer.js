@@ -1,26 +1,46 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getRocket } from '../redux/rockets/rockets';
+import { getRocket, reserveRocket, cancelRocket } from '../redux/rockets/rockets';
 import '../css/RocketsContainer.css';
 
 const Rocket = ({
-  name, img, description,
-}) => (
-  <div className="rocket flex">
-    <img src={img} alt="rocket" />
-    <div className="rocket-details">
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <button type="button">Reserve Rocket</button>
+  id, name, img, description, reserved,
+}) => {
+  const dispatch = useDispatch();
+
+  return (
+    <div className="rocket flex">
+      <img src={img} alt="rocket" />
+      <div className="rocket-details">
+        <h2>{name}</h2>
+        <div className="rocket-description">
+          <p>
+            {' '}
+            {reserved && (
+            <span style={{ backgroundColor: '#0d6efd', color: '#fff' }}>{ reserved && 'Reserved' }</span>
+            )}
+            {' '}
+            {description}
+          </p>
+          {!reserved && (
+          <button type="button" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>
+          )}
+          {reserved && (
+          <button style={{ backgroundColor: '#fff', color: '#5a5a5a' }} type="button" onClick={() => dispatch(cancelRocket(id))}>Cancel Reservation</button>
+          )}
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 Rocket.propTypes = {
+  id: PropTypes.node.isRequired,
   name: PropTypes.node.isRequired,
   img: PropTypes.node.isRequired,
   description: PropTypes.node.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 const RocketsContainer = () => {
@@ -41,6 +61,7 @@ const RocketsContainer = () => {
           type={rocket.type}
           img={rocket.image}
           description={rocket.description}
+          reserved={rocket.reserved}
         />
       ))}
     </>
