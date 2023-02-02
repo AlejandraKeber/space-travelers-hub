@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Membership component Test Membership render correctly 1`] = `
+<td
+  className="status"
+>
+  <button
+    type="button"
+  >
+    Not a member
+  </button>
+</td>
+`;
