@@ -3,3 +3,9 @@
   padding: 3rem;
   justify-content: space-between;
 }
+
+.rockets-ul {
+  border: 1px solid #e1dfdf;
+  border-radius: 2px;
+  width: 40vw;
+}
