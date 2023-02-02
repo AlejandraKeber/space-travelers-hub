@@ -15,4 +15,3 @@ export default function MyRockets(props) {
 MyRockets.propTypes = {
   name: PropTypes.node.isRequired,
 };
-
