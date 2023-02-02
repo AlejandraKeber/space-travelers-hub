@@ -1,10 +1,19 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import store from '../redux/configureStore';
 import JoinBtn from '../Components/JoinBtn';
 
 describe('JoinBtn component', () => {
   test('Test Join button render correctly', () => {
-    const tree = renderer.create(<JoinBtn />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const joinBtn = render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <JoinBtn />
+        </BrowserRouter>
+      </Provider>,
+    );
+    expect(joinBtn).toMatchSnapshot();
   });
 });
