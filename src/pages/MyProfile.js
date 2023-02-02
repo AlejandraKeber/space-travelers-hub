@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import MyRockets from '../Components/MyRockets';
 import '../css/Myprofile.css';
+import ReservedMissionsList from '../Components/ReservedMissionsList';
 
 export default function Myprofile() {
   const rockets = useSelector((state) => state.rocket);
@@ -13,6 +14,7 @@ export default function Myprofile() {
     <main className="MyProfile">
       <section className="MyMissions">
         <h2>My Missions</h2>
+        <ReservedMissionsList />
       </section>
       <section className="MyRockets">
         <h2>My Rockets</h2>
