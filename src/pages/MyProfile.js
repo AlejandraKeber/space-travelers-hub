@@ -18,9 +18,9 @@ export default function Myprofile() {
       </section>
       <section className="MyRockets">
         <h2>My Rockets</h2>
-        <p>
+        <ul className="rockets-ul">
           { reservedRockets }
-        </p>
+        </ul>
       </section>
     </main>
   );
