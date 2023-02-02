@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import MyRockets from '../components/MyRockets';
+import MyRockets from '../Components/MyRockets';
 
 it('renders without crashing', () => {
   const li = document.createElement('li');
