@@ -20,5 +20,5 @@ export default function MissionsLink() {
     >
       Missions
     </NavLink>
-  )
-};
+  );
+}
