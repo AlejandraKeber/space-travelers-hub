@@ -11,8 +11,7 @@ const RocketsContainer = () => {
     if (!rockets.length) {
       dispatch(getRocket());
     }
-  // eslint-disable-next-line
-  }, []);
+  }, [dispatch, rockets.length]);
   return (
     <>
       {rockets.map((rocket) => (
