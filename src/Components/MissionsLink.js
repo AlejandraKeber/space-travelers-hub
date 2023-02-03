@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../redux/missions/missions';
 import { NavLink } from 'react-router-dom';
-
+import { getMissions } from '../redux/missions/missions';
 
 export default function MissionsLink() {
   const dispatch = useDispatch();
@@ -22,4 +21,4 @@ export default function MissionsLink() {
       Missions
     </NavLink>
   )
-}
+};
