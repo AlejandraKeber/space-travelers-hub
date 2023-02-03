@@ -1,0 +1,52 @@
+table {
+  background-color: #e5e8eb;
+  margin: 3rem;
+
+  td {
+    padding: 0.3rem;
+  }
+
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #d8fffc;
+  }
+
+  th {
+    text-align: start;
+    padding: 0.3rem;
+  }
+
+  .name {
+    display: flex;
+    font-weight: bold;
+  }
+
+  .btn {
+    button {
+      white-space: nowrap;
+      padding: 0.4rem;
+      border: none;
+      border-radius: 0.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .join {
+    padding: 1rem;
+
+    button {
+      background-color: #fad9bf;
+    }
+  }
+
+  .leave {
+    padding: 1rem;
+
+    button {
+      background-color: #fd747b;
+    }
+  }
+}

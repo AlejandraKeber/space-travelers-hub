@@ -1,0 +1,40 @@
+table {
+  background-color: #e5e8eb;
+  margin: 3rem;
+}
+table td {
+  padding: 0.3rem;
+}
+table tr:nth-child(odd) {
+  background-color: white;
+}
+table tr:nth-child(even) {
+  background-color: #d8fffc;
+}
+table th {
+  text-align: start;
+  padding: 0.3rem;
+}
+table .name {
+  display: flex;
+  font-weight: bold;
+}
+table .btn button {
+  white-space: nowrap;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+table .join {
+  padding: 1rem;
+}
+table .join button {
+  background-color: #fad9bf;
+}
+table .leave {
+  padding: 1rem;
+}
+table .leave button {
+  background-color: #fd747b;
+}

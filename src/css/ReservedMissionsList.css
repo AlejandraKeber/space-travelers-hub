@@ -1,0 +1,9 @@
+.reservedMissionsUl {
+  border: 1px solid #e1dfdf;
+  border-radius: 2px;
+  width: 40vw;
+}
+.reservedMissionsUl li {
+  border: 1px solid #e1dfdf;
+  padding: 1rem 3rem;
+}
